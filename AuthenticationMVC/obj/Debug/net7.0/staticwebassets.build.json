@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R6Xc9awmdr7/cecR5rZGhz21OX6fMG/cOubWLENL9uA=",
+  "Hash": "6uhtQ6rVQoE+Ksy73Qj3TFqUAOqJNJUwDheovDw5zoQ=",
   "Source": "AuthenticationMVC",
   "BasePath": "_content/AuthenticationMVC",
   "Mode": "Default",
@@ -2089,6 +2089,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\olive\\RepoIstea\\AuthenticationMVC\\AuthenticationMVC\\wwwroot\\Volante.ico",
+      "SourceId": "AuthenticationMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\olive\\RepoIstea\\AuthenticationMVC\\AuthenticationMVC\\wwwroot\\",
+      "BasePath": "_content/AuthenticationMVC",
+      "RelativePath": "Volante.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Volante.ico"
     }
   ]
 }

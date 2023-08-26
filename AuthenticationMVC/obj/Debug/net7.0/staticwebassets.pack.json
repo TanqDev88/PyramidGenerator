@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\AuthenticationMVC.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\olive\\RepoIstea\\AuthenticationMVC\\AuthenticationMVC\\wwwroot\\Volante.ico",
+      "PackagePath": "staticwebassets\\Volante.ico"
+    },
+    {
       "Id": "C:\\Users\\olive\\RepoIstea\\AuthenticationMVC\\AuthenticationMVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
