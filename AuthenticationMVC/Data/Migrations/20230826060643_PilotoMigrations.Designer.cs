@@ -3,6 +3,7 @@ using System;
 using AuthenticationMVC.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AuthenticationMVC.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230826060643_PilotoMigrations")]
+    partial class PilotoMigrations
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.10");
@@ -211,39 +214,6 @@ namespace AuthenticationMVC.Data.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
-                });
-
-            modelBuilder.Entity("Race_Track.Models.Piloto", b =>
-                {
-                    b.Property<int>("PilotoId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("PilotoApellido")
-                        .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("PilotoDni")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("PilotoExpedicion")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("PilotoNombre")
-                        .IsRequired()
-                        .HasMaxLength(15)
-                        .HasColumnType("TEXT");
-
-                    b.Property<int>("PilotoNumeroLicencia")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<bool>("PilotoPropietario")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("PilotoId");
-
-                    b.ToTable("Piloto");
                 });
 
             modelBuilder.Entity("Race_Track.Models.Vehiculo", b =>

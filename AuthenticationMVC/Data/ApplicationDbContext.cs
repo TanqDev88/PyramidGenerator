@@ -11,4 +11,5 @@ public class ApplicationDbContext : IdentityDbContext
     {
     }
     public DbSet<Race_Track.Models.Vehiculo> Vehiculo { get; set; } = default!;
+    public DbSet<Race_Track.Models.Piloto> Piloto { get; set; } = default!;
 }
